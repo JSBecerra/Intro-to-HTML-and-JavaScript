@@ -1,0 +1,94 @@
+XML----
+
+Extensible Markup Language (XML) is another XML language that was born from W3C, it was designed to represent data in 
+a format that was both human and machine-readable. XML shares a relationship with SGML much like HTML but XML retricts 
+SGML further by requiring all tags to be closed and attributes to be explicit. 
+
+The key to XML is that it uses a very strict markup language that can represent data in a heirarchial format.
+
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+    <item price="0.75">Apple</item>
+    <item price="0.25">Banana</item>
+    <item price="1.00">
+        Orange
+        <plucodes>
+            <plucode description="Navel Orange">4012</plucode>
+            <plucode description="Blood Orange">4381</plucode>
+            <plucode description="unknown" />
+        </plucodes>
+    </item>
+</list>
+
+This example data set is a list of fruit at a grocery store. For each fruit item element, we have the price set as an attribute of that element. For 
+the oranges element, we also hav ea child element that has three child elements. Each of these plucode elements specify a description as an 
+attribute and the code as the content of the element.
+
+XML examples
+
+XML has key terminology used to describe the language constructs. We will use the same language constructs to describe both languages.
+
+Tag, there are three types of tags seen in XML:
+
+* Opening (or Start) Tag: <item> these tags represent the start of a logical component or element..
+* Closing (or end) Tag: </item> end of ""
+* Empty Element Tag: <item /> These tags represent both a logical component without any child content.
+
+Element-- 
+
+An element is a XML markup language construct that includes either an empty element tag or set of opening & closing tags.
+<plucode>4012</plucode>
+<plucode />
+
+The text between the tags is considered the element's content. 
+An element can also have other elements within it's opening and closing tags. These elements are referred to as child elements.
+
+Attribute---
+
+A XML element can optionally have markup constructs that describe a key-value pair. These constructs are referred to as attributes and can 
+provide additional metadata about a specific XML element. 
+
+Declaration-- 
+
+Every XML document must begin with a declaration. The declaration specifies important information about the XML document including version and encoding: 
+<?xml version="1.0" encoding="UTF-8"?>
+
+HTML & XML
+
+Both XML and HTML began as markup langagues that built on SGML by either restricting language features or adding new features.
+
+It was not until years later that a new HTML standard (XHTML 1.0) was created to apply the strict rules of XML to HTML. While this standard 
+lasted for years, it was eventually replaced by the more modern and widely accepted HTML5 standard!
+
+Web Browsers---
+
+Web browsers perform three primary functions: 
+
+- They retrieve the contents, over HTML applications when we give it a universal resource locator. 
+- They show us the page in a nice and convenient format 
+- They allow us to traverse different web pages and even locations within the same web page.
+
+Simply by clicking on hypertext links.
+
+We tend to use HTML Markup, CSS styles, and JavaScript technologies which are cross platform and allow us 
+to look at HTML documents regardless of what browser is used.
+
+If you write accessible code it will run perfectly across 95% of the devices out there, we are not only dealing with 
+desktop browsers but also mobile device browsers.
+
+HTML Versions-----
+
+The W3C develops the various standards and protocals used throughout the web. One of their key jobs is to 
+develop new and updated standards for the HTML markup language.
+
+There have been many different versions of HTML over the years: 
+
+SGML 
+HTML (1991) 1.0 To address remote machines, a new specification was invented using the format "www.nameofotherplace.name". Not long after early browsers such as mosaic, were released to interact with the early www.
+HTML (1995)2.0 Updated small modifications such as tables, image maps, internationalization and file uploads, prior to release Netscape and IE browsers were released.
+HTML 3.0-3.2 (1997) Included features such as frames, applets, wrapping text around images (flow), and additional text elements, around this time JS and CSS were beginning to take shape.
+HTML 4.0 (1999) Removed a lot of browser-specific formatting markup in favor of using CSS, this version included variations that allowed control over how many deprecated elements such as marquees and frames were allowed on the page.
+XHTML 1.0 (2000) Focused heavily on making sure all HTML markup was compliant XML. Various XML features were enforced in order for your web page to render. Standard is out of date now.
+
+HTML5 (2014) Included many more new semantic elements and attributes than previous versions. Dropped alot of SGML features and focused on creating a 
+clear, forward-looking specification that could last for many more years.

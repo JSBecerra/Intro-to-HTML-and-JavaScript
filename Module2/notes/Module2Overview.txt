@@ -1,0 +1,106 @@
+Overview----
+
+This section describes the controls that may be used within the context of a form, and which allow the user to enter data that is submitted for 
+processing by the server.
+
+Input Controls----
+
+To build a form in HTML you can use a variety of input elements. Each input element offers options that allow you to control features such as 
+validation or watermarks.
+
+<textarea> element 
+
+The textarea element renders a multi-line text input control. This control allows the user to enter large quantities of text that may wrap and span 
+across multiple lines.
+
+<textarea rows="3" cols="30">
+We live in a mobile-first and cloud-first world. Computing is ubiquitous, and experiences span devices and exhibit 
+ambient intelligence.
+</textarea>
+
+<select> element 
+
+The select element renders a drop-down list with multiple options. This element contains child option 
+elements that allow you to designate (for each option) a value to be shown to the user and a value to be saved when the form is saved. 
+
+<select>
+    <option value="DAT202x">Processing Big Data with Azure HDInsight</option>
+    <option value="DAT204x">Introduction to R Programming</option> 
+    <option value="CLD203x">Office 365: Managing Identities and Services</option>
+</select>
+
+Alternatively you can use the optgroup element to group related options: 
+
+<select>
+    <optgroup label="Data Platform">
+        <option value="DAT202x">Processing Big Data with Azure HDInsight</option>
+        <option value="DAT204x">Introduction to R Programming</option>
+    </optgroup>
+
+<input> element----
+
+The input element is the most basic form element in HTML. It can be used to capture a wide variety of input including text and numeric values. 
+This element has a type attribute that allows you to provide additional metadata about a specific input field. You can designate a field to capture e-mail or URLs. 
+The behavior of the web page may change depending on the browser or client device, a mobile device may display a specific keyboard for URL input. 
+
+Example: 
+
+<form ...>
+    Username: <input type="text" name="username" />
+    E-mail Address: <input type="email" name="emailaddress" />
+</form>
+
+Input Types-----
+
+There are a wide variety of types that can be used with the input element:
+
+button, renders a button that is typically used with JavaScript frameworks (such as Angular or Knockout) 
+checkbox, renders a checkbox that can be independently clicked, has a value of on or off.
+file, renders a field for file selection and a Browse button to select the file on the client device 
+hidden, does not render anything but it will store a value. This can be used to store values that need to go out to the server when the form is saved. 
+image, renders an image that functions as a submit button 
+password, renders a text input where the characters are masked for privacy. 
+radio, renders a radio button that can be selected as part of a group of radio buttons. 
+text, renders a basic text input field.
+submit, renders a button that submits the HTML form.
+
+<button> element----
+
+This special button element functions similarly to an input element of type button but it also allows you to render custom content 
+within the button. 
+
+Example
+
+Rendering the Microsoft logo within a button. 
+
+<button types="button">
+    <img src="images/microsoft.png" alt="Microsoft" />
+    <br />
+    Apply to Microsoft!
+</button>
+
+Forms---- 
+
+HTML forms allow us to capture user input and submit it to different servers. So that we can process it for 
+later use. Now from the HTML side of things the form is very simple to create simply use the form tag.
+
+You can specify an action, which will tell the form which webpage to post against and you can specify the method. 
+To post the form or get, or you can make that HTTP post request, against the action page, more on that later.
+
+You can group things using fieldsets, such as numerica data or text data. You can use legends to title your fieldsets. 
+
+Submit Button------ 
+
+<form  - HTML forms allow you to collect information using various input fields and submit it to a server for processing 
+action="http://www.example.com/formsubmission" method="POST"> - This action attribute indicates a URL where the form will be submitted. This may be a local 
+or remote server that will process the form data.
+
+The method attribute of a HTML form indicates a HTTP method (such as GET or POST) to use when submitting the form data to the URL  
+specified in the 'action' attribute.
+
+First Name: <input type="text" name="fname" /> 
+Last Name: <input type="text" name="lname" /> 
+<input type="submit" value="Save Information" /> A submit button, submits a form for processing, to indicate that a button should be a submit button 
+you should use the type 'submit' as an attribute of the input element. The type 'reset' is also supportd to reset controls to their initial values.
+</form> 
+

@@ -1,0 +1,140 @@
+This course teaches you the fundamentals of HTML and JavaScript. We will also touch the basics of CSS. To learn more about 
+CSS, check other courses.
+
+Course Outline---
+
+Module 1: Creating Web Pages using Hyptertext Markup Language (HTML)
+We will learn how to create a basic HTML document using the core HTML elements. We will learn abou the basic structure of an HTML 
+element(content, attributes, etc.) and how they are used in the context of your HTML web pages.
+
+Module 2: Creating Sophisticated Document Structures using HTML
+We will learn how to use advanced features of HTML such as forms and semantic elements to create more sophisticated HTML 
+documents. We will learn when each of these components are used and their significance in the HTML markup spec. Lastly we will be able to use 
+components such as SVG and media elements.
+
+Module 1 Overview------
+
+HTML (Hypertext Markup Language) is the original language of the Web. It is written by putting code into angled brackets (<>) to create tags. 
+The tags surround the content of a web page, working behind the scenes to define the layout of the page. Web browsers read HTML tags and display the 
+text and images accordingly. At the end of this section, you will learn: 
+
+* Learn about Semantic Markup and how to use Semantic Markup.
+* Describe the purpose of using HTML
+* Understand the difference between HTML and XML.
+* Describe Web Browsers and some of the popular browsers that are available.
+* Describe the various versions of HTML.
+
+Introduction to Semantic Markup----
+
+Semantic Markup--
+
+What is Semantic Markup?
+
+Semantic markup is text data that is annotated using a special language to offer additional meaning to the text.
+
+For example, let's consider a list of words in the phonetic alphabet:
+
+* Delta, Echo, Foxtrot
+
+In our text content, we could just list these words out like so: 
+
+Delta Echo Foxtrot
+
+How would another person decipher meaning from this block of text? Is it a quote? Is it part of an incomplete sentence?
+
+We need to annotate this list so that others understand the meaning of this text. Let's look at an example: 
+
+[list]
+    [item]Delta[\item]
+    [item]Echo[\item]
+[\list]
+
+With this annotation, we are now making it clear to others that the meaning of this block of text is a list. The meaning in this context is referred 
+to as the semantics of the language. The annotation in this context is referred to as the markup of the languagel. 
+
+We can now include that block of text in a larger document and people will understand that it's a list. 
+
+The meaning of this document is very clear using semantic markup!
+
+Using Semantic Markup--- 
+
+Semantic Markup is used across a wide variety of industries today and innovations are still happening every day!
+
+By seperating the content from the appearance of their documents they were able to make their process more efficient.
+They can also update the content of the document without having to worry about making sure their document "appears" correct.
+
+In recent years there have been new innovative markup languages such as Markdown and LaTeX that allows a researcher to write their 
+content in a very concise format. Tools such as Pandoc are used to convert the markup into formats that can be distributed such as PDF or 
+Word documents. You can even specify formatting for the generated documents.
+
+If we run this markup through a parser, we will get a rendered table.
+
+We were able to represent the meaning (semantics) of our data by defining a table. Depending on the style used, another tool cana render that 
+table in any appearance that is necessary.
+
+If you create a project in GitHub, GitHub uses a markup language named "Markdown". Many forums have their own 
+custom markup languages. 
+
+The most commonly mentioned implementation of semantic markup is HTML. HTML allows us to record our semantics using a markup 
+language and then have it rendered client-side by the browser. If we wish to change the appearance of our web page, we can do so 
+using CSS. 
+
+HTML Markup--- 
+
+Here, we have HTML markup that represents a list from the phonetic alphabet.
+
+<ul>
+    <li>Alpha</li>
+    <li>Bravo</li>
+    <li>Charlie</li>
+</ul>
+
+If we display this HTML in a browser, the browser will render a list that is styled differently depending on the browser.
+We were able to represent the meaning (semantics) of our data by defining a list. We can modify the appearance of that list 
+using CSS if we wish.
+
+Why HTML?
+
+Birth of the Web--- 
+
+In 1989, Tim Berners-Lee worked in a particle physics lab named CERN. While there, he found that there was a need to share large amounts of 
+documents. Because of the text at the time, researchers were already using markup languages so that they can write documents using a text-only
+format that can be quickly shared with other labs.
+
+This format that many researchers used was named Standard Generalized Markup Language (SGML). SGML included annotations that allowed 
+reseraches to apply formatting to their documents quickly such as: 
+
+<p>: paragraphs
+<h1>-<h6>: headers
+<title>: titles
+<OL>: ordered lists
+<UL>: unordered lists
+
+SGML's specification was very open and this allowed different labs to be creative in how they used the language. This did, in turn, cause various 
+incompatbilities with different labs as they all may have different interpretations of the same markup.
+
+SGML was almost missing a feature that would become key to HTML. Documents created using SGML did not have a standardized way of 
+referencing other documents. When Tim Berners-Lee created the HTML language, he extended SGML by adding more annotations and adding 
+the ability for documents to reference each other. 
+
+Linking--- 
+
+This was very useful in the academic space where researchers can keep "mining" deeper into related research documents and discover 
+information that may have been difficult to access using older methodologies. He went on to refer to this design as hypertext and hypermedia. 
+
+HTML Markup --
+
+HTML is a true extension of SGML. HTML does a few things differently:
+
+* HTML restricts which SGML tags are allowed to be used on a web page 
+* HTML creates a dedicated tag (<a>) known as the anchor tag to reference other documents.
+
+HTML's ability to cross-reference documents helped it again rapid popularity amonst researches and scientsts.  
+In 1990, Tim Berners-Lee published a formal proposal titled WorldWideWeb that described a system of hypertext documents  
+viewed by software named browsers in a client-server architecture.
+
+World Wide Web Consortium--- 
+
+Not long after the first two HTML proposals (HTML 1.0 and 2.0), Tim Berners-Lee founded and led the World Wide Web Consortium (W3C).
+The group of member organizations and staff worked together to develop new standards for the WWW on a regular basis. W3C has created specifications 
+for HTML, XML, CSS and even XHTML. (Also SOAP, SPARQL, MathML)

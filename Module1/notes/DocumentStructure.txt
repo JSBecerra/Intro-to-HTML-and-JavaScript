@@ -1,0 +1,138 @@
+Overview---
+
+A web page constructed using HTML has a basic and essential strcture. At the end of this section, you will: 
+
+* Describe the HTML element.
+* Describe how to use the BODY/HEAD elements.
+* Create a basic HTML page.
+* Examine the structure of an HTML page.
+
+HTML element---
+
+The html element basically tells your computer that this is an HTML document.
+
+<!DOCTYPE HTML>
+This declaration is required before the HTML tag to specify that an HTML page is being presented.
+
+<html xmlns= "http://www.w3.org/1999/xhtml"
+manifest="thisapplication.appcache"
+lang="en-US"> 
+This attribute specifies the location of the cache manifest file. This allows your application to cache information 
+offline so that the application can load data in faster and more efficient ways and support an offline browsing scenario.
+
+</html> Closing of the HTML tag. All other HTML elements reside within the HTML tag.
+
+Body/Head Elements-----
+
+<head> This element is a container for metadata, (data about data). They are placed between the <html> tag and the <body> tag.
+<title>Sample Page</title> The title tag's content represents the title of the HTML web page.
+</head>
+<body onload="handleLoad"
+ononline="handleNetwork"
+onresize="handleResize">
+</boldy>
+
+This body tag represents the root of the content rendered on a HTML web page. 
+
+The attribute specifies a JavaScript method to be called when the page has finished its initial loading.
+
+Hands-On: Creating a Basic HTML Page
+
+<ins> mark for insertion, differences between versions for example.
+<del> strikes through text
+<mark> highlights text
+<br /> adds a break in the text, content after this tag appears on the next line.
+<h1> through <h6> size of text decreases as the number in the tag goes up.
+
+CMS- Content Management System.
+
+You can combine these tags to effect the same content.
+
+Block and Inline Elements ------
+
+In HTML, there are two primary types of container elements: -Block Elements - Inline Elements
+
+The type of element dictates what the default rendering logic will be for the content within that element or the element itself.
+
+Block Elements---
+
+Block-level elements always take up the full-width that is available on-screen. By rendering using the full-wdith fo the screen, the 
+content of this element is rendered on new line. It takes up the whole line so nothing can be next to it.
+
+Three primary examples of block level elements already used in previous HTML examples:
+
+* <br> element
+* <body> element 
+* <p> elements 
+
+<br> element 
+This element creates a single line break between text content. Since th eline break takes up the entire width of the HTML page, the br element is 
+considered a block element.
+
+<div> and Other Block Elements----
+
+The <div> element is a multi-purpose element that gives you a container for other content. You can nest many different div elements 
+within each other, or you can create sibling elements with content that should be rendered on different lines, mix and match!
+
+Some other block elements include: article, aside, blockquote, button, canvas, dd, dl dt, h1-h6, footer, header, form 
+
+Note: Elements such as article, header, and footer provide more semantic detail than a typical div element, when possible use these so other 
+developers can infer menain gfrom your HTML structure.
+
+Inline Elements---
+
+These differ in that inline elements only take up as much space as needed to render their content. So they can be next to each other on the same 
+line if they aren't too big, otherwise they go to a new line.
+
+The most common inline elements is the <span> element. Others include: 
+
+strong, ins, del, sup, sub, i, em 
+
+Mixing Inline Elements and Block Elements----
+
+Inline Elements and Block elements can be used together as sibling elements within HTML content. Typically you can only place inline elements 
+within a block element since an inline element will be able to fit within the entire width of the page, but not the other way around. 
+
+Using the display CSS attribute, you can change the rendering of any element between block or inline but it is not a good idea to change the  
+way HTML elements are expected to behave on a page.
+
+You can specify width within element tags: 
+<div style="background-color: red; width: 800px;">This is the first line of text</div>
+
+Images-----
+
+In HTML images are represented using the <img> tag. This tag provides metadata about the image file and preferred sizing to help the browser 
+decide how to render the image.
+
+<img src="images/person.png" />
+
+You can adjust the size of the image usin ghte height and width attributes.
+
+If you adjust one of the attributes, the image will change size while maintaining its aspect ratio. 
+
+<img src="images/person.png" width="350" /> 
+
+If you set both the height and width, the image will change to the exact size ignoring aspect ratio. It can 
+result in warped images so be careful.
+
+Alternate text---
+
+You can set the alternate text for an image using the alt attribute:
+
+<img src="images/person.png" alt="Person holding computer" /> 
+
+This text is rendered in scenarios where the image cannot be displayed. 
+
+Accessibility: Some modern browsers, such as those for the visually impaired, do not render images. It is important to specify alt 
+text for these browsers, as it will allow visitors to understand what you intended to show in your image.
+
+There are a wide variety of elements that you can use in HTML to format your text blocks. 
+
+Bold, Strong, Italic, Emphasized <em>, etc.
+
+It's important to understand that these attributes existed, align and center, they were used alot in the earlier versions of HTML. 
+Many older Web Applications or pages will have these tags sprinkled throughout. 
+
+It is important to understand what they are so we can avoid them, change them if we run across them, and educate others 
+and help them use the newest, latest and greatest semantic tags. Then implement the look and feel in their CSS documents.
+

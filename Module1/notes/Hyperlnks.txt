@@ -1,0 +1,66 @@
+A webpage can contain various links that take you directly to other pages and even specific parts of a given page. These links are known as 
+hyperlinks.
+
+Hyperlinks allow visitors to navigate between Web sites by click on words, phrases, and images. Therefore, you can create hyperlinks using 
+text or images available on a webpage.
+
+In this section, we will learn how to create external and internal hyperlinks.
+
+We will be using the <a> tag to reference a hyperlink, this element has different attributes, the one we need is the 'href' element or attribute that 
+tells you where to go. 
+
+There's another one that is really useful called target, and this tells you, where you want the browser to go, how you want it to behave. Do you need a new 
+tab or window? Do you want to browser to replace the current tab or window with the new website, which by default itself is the target to replace the current tab/window. 
+
+Some other useful attributes are 'rel', this is where you can actually specify the relationship between document active and the document the user is going to. 
+Maybe they're going to the office Web Site or maybe a bookmark page, maybe they're following license information, all specified in rel. 
+
+The other useful one is the download attribute, you specify this attribute in the scenario where you want users, that download the content of this link instead of viewing it 
+directly in the browser. 
+
+<a href="http://www.edx.org" target="_self" rel="author">Go to edX.org</a>
+        
+<a href="http://www.microsoft.com" target="_blank" rel="help">Go to Microsoft</a>
+
+Internal Hyperlinks---- 
+
+We can use hyperlink tags to create links to content within the smae Web page. Sometimes you have scenarios where we 
+have too much text on a Web Page and you want people to be able to jump between Sections without having to scroll down manually, or 
+locate the section itself. 
+
+This is especially useful if you have Web pages with lots of content. 
+
+The way you do this is by specifying an id attribute inside the tag of the element you want to easily find: 
+
+<p id="skipToSection"></p>
+
+Now we can create a hyperlink tag, and inside we add a href attribute, and this attribute is going to reference the skipToSection
+<a href="#skiptoSection"> notice the #, used to denote that it is an id. 
+
+Now we finish it up by placing some text within the <a> tags. 
+
+<a href="#skiptoSection"> Go to highlighted Section</a>
+
+So you can see how easy it is to navigate your page if you use the anchor tags accordingly.
+
+To sum up: Not only can HTML reference external or remote documents (web pages), HTML can also reference elements within the same page. 
+
+1. You must create an id attribute for the target HTML element. The id attribute is universal and can be placed on all HTML elements: 
+
+<img id="coolImage" src="images/interestingImage.jpg" alt="Interesting Image" /> 
+
+2. You can create an anchor tag <a> and specify the id as the target of this anchor tag. Don't forget the # sign. 
+
+<a href="#coolImage">Navigate to Cool Image</a>
+
+External Links to Internal elements----
+
+You can also use the same internal ids# when someone navigates to your web page in their browser. 
+
+For example, if your image has an id of coolImage you can give the user a URL such as "http://www.mywebsites.com/index.html" and they will be 
+navigated to your web page at the top of the home page(default behavior).
+
+If you use this url: http://www.mywebsites.com/index.html#coolImage", they will be navigated to your web page but they will start at the location of 
+your image instead of the top of the home page. 
+
+This technique is very useful for web pages with large quantities of text where you want to a user to "jump" to a specific section.

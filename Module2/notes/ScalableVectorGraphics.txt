@@ -1,0 +1,109 @@
+SVG---
+
+Scalable Vector Graphics is an image format that can draw 2d graphics directly in the browser. SVG is based on XML and supports 
+feactures such as interactivity, transitions and animations. SVG was one of many standards designed by the W3C. Typically SVG graphics 
+are stored in XML files and edited using vector-based image manipulation programs. Many browsers can display SVG graphics in a manner 
+similar to how they display other image formants.
+
+HTML5 introduced the ability to embed SVG graphics directly in web pages. Now you can create SVG shapes in your HTML web page and 
+manipulate them directly with CSS or JavaScript.
+
+SVG Shapes--
+
+HTML5 introduced some basic SVG shapes that can be used in a wide variety of scenarios. These shapes offer simple attributes that allow you to 
+create SVG graphics quickly without the need to learn the syntax for drawing paths. You can combine various SVG shapes to create complex 
+objects such as logos. 
+
+<svg height="200" width="400">
+    <rect x="100" y="50" rx="20" ry="20" width="250" height="100" fill="#1B043C" /> 
+    <rect x="100" y="50" width="200" height="100" fill="1B043C"
+    <circle cx="100" cy="100" r="50" fill="472772" /> 
+    <text fill="#D7BFF3" font-size="28" font-family="Segoe UI Light" x="160" y="108">CompanyName</text>
+</svg>
+
+Circle-- 
+
+An SVG circle element creates a simple circle with a defined center point and radius:
+
+Attributes:
+
+cx & cy     These two attributes together define the coordinates for the center of the circle. By default, the center of the circle is (0,0) 
+r           This attribute specifies the radius of the circle
+fill        This defines the color used for the border of the circle 
+stroke      This defines the color used for the border of the circle
+stroke-width This defines the width of the border of the circle. 
+
+Rectangle--
+
+A SVG rectangle element creates  asingle 4-sided rectangular polygon that is drawn froma defined top-left point, width and height: 
+
+x & y       These two attributes define the coordinates for the top left of the rectangle. By default top-left is 0,0
+rx & ry     Specify the radius for rounded corners on the x or y axis.
+width       Defines the width of the rectangle 
+height      This attribute defines the height of the rectangle 
+fill        Defines the color used for the interior of the rectangle 
+stroke      Color for border 
+stroke-wdth Size of the border 
+
+Text-- 
+
+A SVG text element renders text to the screen from a defined bottom-left point. 
+
+x & y       Coordinates for the bottom-left of the text 
+fill        Color of the text 
+font-size   Size of the text 
+font-family Defines the text font 
+
+<svg height="200" width="200>
+    <text font-size="28" font-family="Segoe UI Light" x="0" y="30" fill="#B6652A">Example</text>
+</svg>
+
+HTML Media Elements---
+
+Out of the box, HTML5 supports basic multimedia playback with a new set of media elements that are supported cross-browser. These media 
+elements allow you to specify video/audio source[s], along with some parameteres to play video or audio directly on your HTML page. 
+
+You can specify multiple sources for your multimedia so that each browser can pla the files that it natively supports. You can also style the 
+media player using CSS to fit your design needs. You can even control which aspects of the media player are available using attributes such as 
+controls. 
+
+Video Element---
+
+The video element in HTML is used to play video files: 
+
+<video height="500" controls="controls" poster="screenshot.png">
+    <source src="advertisement.webm" type="audio/webm" />
+    <source src="advertisement.webm" type="audio/ogg" />
+    <source src="advertisement.webm" type="audio/mp4" /> 
+</video>
+
+Audio Element-- 
+
+<audio autoplay="autoplay" controls="controls" loop="loop">
+    <source src="popopen.wav" type="audio/wav" />
+    <source src="popopen.ogg" type="audio/ogg" />
+    <source src="popopen.mp3" type="audio/mpeg" /> 
+</audio> 
+
+Supporting Multiple browsers-- 
+
+You can always define multiple sources for the video or audio controlt o handle the most browsers possible: The sources will be attempted in 
+order from the top to the bottom. 
+
+Handling Unsupported browsers-- 
+
+The audio and video elements in HTML5 allow you to handle Unsupported browsers by displaying HTML content if the video/audio player is not 
+available: 
+
+<audio controls="controls> 
+    <source src="audio/music.ogg" type="audio/ogg" /> 
+    Sorry, your browser does not support the OGG format.
+</audio> 
+
+<video controls="controls">
+    <source src="video/movie.webm" type="video/webm" />
+    Sorry, your browser does not support the WebM format. 
+</video> 
+
+As with everything else you can use CSS or JavaScript to modify the element and make it your own!
+Remember you can use multiple source tags, to cover more browsers.

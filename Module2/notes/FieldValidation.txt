@@ -1,0 +1,130 @@
+HTML5 Field Valdiation----
+
+Input Validation---
+
+HTML5 introduced field validation that applied to both existing HTML input controls and a new set of input controls. 
+
+Input Attributes--
+
+Multiple attributes were introduced that allowed for the most commmon and simple validation requirements. If the requirements 
+weren't met, the browser would simply not save your HTML form. There are also new attributes introduced that ehance the functionality of 
+forms in HTML5.
+
+Required***
+
+The required attribute specifies that a text input must have valid data before the HTML form is saved: 
+
+<input name="email_address" type="email" required="required" />
+
+Pattern***
+
+The pattern attributes specifies a regular expression that the value of the input field must match before the HTML form is saved:
+
+<input name="zip_code" type="text" pattern="\d{5}(-\d{4})?" required="required" /> 
+
+Readonly***
+
+The readonly attribute specifies that a particular field is readonly and cannot be modified by the user:
+
+<input name="profile_url" type="url" readonly="readonly" />
+
+Disabled***
+
+The disabled attribute specifies that a particular field is disabled and cannot be modified by the user: 
+
+<input type="submit" disabled="disabled" />
+
+Min/Max***
+
+The min and max attributes are used with the range input type to specify boundaries for the selected numeric value:
+
+<input name="issue_quantity" type="range" min="1" max="15" /> 
+
+They can also be used with date inputs: 
+
+<input name="service_date" type="date" min="2001-01-01" max="2999-12-31"> 
+
+Autocomplete***
+
+The autocomplete attribute is used with various text inputs to toggle the auto-complete feature found in most modern browsers.
+
+<input name="api_key" type="text" autocomplete="off" /> 
+
+Placeholder***
+
+The placeholder attribute renders a "watermark" that is shown when the input is empty. This hint text can be used to give the user further instructions for the 
+specific field. 
+
+New Input types in HTML5:
+
+Don't need to use additional code or JavaScript---
+
+color, date, datetime-local, email, month, number, range, search, tel (telephone #), time, url, week
+
+Skipping Validation --
+
+If you would rather handle validation manually or using your own code, you can always skip validation using the nonvalidate attribute on a 
+HTML form: 
+
+<form nonvalidate="nonvalidate">
+</form>
+
+Fieldsets & Legends are used to make content on a web page easier to read for users and other developers!
+
+HTML5 Form Elements---
+
+HTML Forms--
+
+Modern HTML does more than just display content and link documents. Today, the web lets us perform transactions, sign up for 
+services and interact with others. In HTML input handled using three main concepts. 
+
+In HTML, the <form> element is used to create an HTML form where you can capture user input. Within, you can use a variety of input 
+elements to construct your form. Once you are done, you can simply add a special input element called a submit input.  This special input 
+element renders a button that will save the contents of the form to a web server or web service. 
+
+form element- <form action="http://www.example.com/formsubmission" method="POST"></form>
+
+The form element has two primary attributes: -action: This is the URL of the web server or web service where you want your form data saved. 
+method: This is the HTTP method you are using to save your form data. Only GET and POST are valid in this context. 
+
+Inside of the form element, you can add as many input controls as needed. Once you are done, create a submit input to complete the form. 
+
+You can also optionally add fieldset and legend elements. These help you group your form into categories to make it easier for others to 
+compelte the form. Fieldset is sections and legend is a label for the section.
+
+A traditional fix for non-semantic elements was to provide a large amound of comments and very descriptive CSS class names. This presents 
+two common problems: 
+
+CSS class names were never designed to describe the content of a HTML element. 
+
+HTML comments can greatly increase the size of your web page, not so good in todays modern world of mobile browsers and thin clients.
+
+Common semantic elements introduced by HTML5: 
+
+Header, Footer, Nav, Section, Article, Aside, Details, Figure, Figcaption, Main, Mark, Summary, Time all work same as div. 
+
+Machine inference---
+
+The semantic elements are unique because they have meaning that machines can infer from your web application. For example, the article 
+element signals to a crawler that this section contains text information that is worth scanning. A search index crawler may not care what 
+content is contained in the header or nav elements. Makes search engines more efficent, and opens up scenarios where youc an parse a HTML 
+web page for information. For example, you may write a JavaScript extension that reads a web page, finds any **time** semantic elements and display 
+them using a special panel. 
+
+Design---
+
+Another advantage of semantic elements is the ability to use CSS to design the element directly without requiring additional CSS classes. More 
+importantly, you can use features such as CSS Media Queries to re-arrange your semantic elements for a mobile browser.
+
+Microformats, such as the time element, are all about giving additional metadata, so that it's machine-readable and usable by client extensions, browsers, 
+search engines, whatever to enhance the functionality of user experience, mobile devices etc. The other advantage of using a micro format is that you can 
+add JavaScript, that could for example make a calendar entry everytime a time element exists.
+
+Just remember that the time element itself doesn't have any formatting, it looks identical to a page without that time element. 
+
+Figure Elements---
+
+Figure elements are one of the mini semantic elements available in HTML. Figure elements are interesting in a sense that they allow us to say this is an 
+image and here is the caption describing that image. Seperately we can create a CSS file that apply a look and feel to it.
+
+Using tags: <figure> and <figcaption> respectively.
